@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 
+
 export default {
   data() {
 
@@ -10,7 +11,7 @@ export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
   }
 }
 </script>
@@ -26,6 +27,7 @@ export default {
 
   <footer>
    <AppFooter/>
+  
   </footer>
 </template>
 

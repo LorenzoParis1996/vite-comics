@@ -3,3 +3,9 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@mixin flexFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

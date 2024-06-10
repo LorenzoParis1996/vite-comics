@@ -18,7 +18,7 @@ export default {
   .content {
     background-color: #1c1c1c;
     color: white;
-    padding: 2.5rem;
+    padding: 3rem;
     font-size: 10px;
     
     h1 {

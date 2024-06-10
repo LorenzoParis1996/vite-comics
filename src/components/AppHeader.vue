@@ -100,7 +100,7 @@ export default {
 
   nav {
     @include flexHeader;
-    padding: 1.5rem;
+    
 
     .header-logo {
         width: 85px;
