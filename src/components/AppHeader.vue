@@ -72,7 +72,7 @@ export default {
 
 <template>
     <nav>
-        <div>
+        <div class="header-logo">
             <img src="../img/dc-logo.png" alt="logo dc">
         </div>
         <ul>
@@ -101,6 +101,14 @@ export default {
   nav {
     @include flexHeader;
     padding: 1.5rem;
+
+    .header-logo {
+        width: 85px;
+        
+        img {
+            width: 100%;
+        }
+    }
     
     ul {
         display: flex;
