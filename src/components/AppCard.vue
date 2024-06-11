@@ -99,13 +99,39 @@ export default {
 
 .content {
     background-color: #1c1c1c;
-    color: white;
-    padding: 3rem;
-    font-size: 10px;
-    
-    h1 {
-      padding-left: 13rem;
-    }
+    padding: 3rem; 
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      article {
+        width: calc(100%/ 6);
+        padding: 0.8rem;
+
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          object-position: top;
+
+          &:hover {
+            filter: brightness(1.50);
+          }
+          
+        }
+
+        p {
+          padding-top: 0.5rem;
+          color: white;
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+    }  
  }
 
 </style>
