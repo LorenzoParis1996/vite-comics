@@ -13,9 +13,6 @@ export default {
 <template>
   <div class="jumbo-main">
   </div>
-
-  
-  
   <AppCards/>
 </template>
 
@@ -24,7 +21,7 @@ export default {
 
 .jumbo-main {
    background-image: url(../img/jumbotron.jpg);
-   padding: 13rem;
+   height: 26rem;
 }
 
 

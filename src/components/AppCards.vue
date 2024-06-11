@@ -89,10 +89,20 @@ export default {
 
 <template>
   <div class="content">
+      <div class="title">
+       <h4>current series</h4>
+      </div>
+      
     <div class="container-cards">
       <SingleCard v-for="(item, index) in cardList" :key="index" :singleCard="item"/>
 
      
+    </div>
+
+    <div class="load">
+        <button>
+            load more
+        </button>
     </div>
   </div>
 </template>
@@ -102,15 +112,53 @@ export default {
 
 .content {
     background-color: #1c1c1c;
-    padding: 3rem; 
+    padding: 1rem; 
+     
+    .title {
+       max-width: 500px;
+       position: relative;
+
+        h4 {
+        color: white;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        background-color: #0282f9;
+        position: absolute;
+        bottom: -10px;
+        left: 300px;
+    }
+ 
+    }
 
     .container-cards {
+      padding-top: 2rem;  
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       max-width: 1200px;
       margin: 0 auto;
     }  
+
+     .load {
+        text-align: center;
+        margin-top: 1rem;
+
+        button {
+        border: none;
+        background-color: #0282f9;
+        color: white;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 1rem 5rem;
+
+         &:hover {
+            background-color: white;
+            color: black;
+         }
+       }
+     }
  }
 
 </style>
