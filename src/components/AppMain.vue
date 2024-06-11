@@ -1,18 +1,24 @@
 <script>
+import AppComics from './AppComics.vue';
 export default {
   data() {
     return {}
+    },
+    components: {
+      AppComics
     }
 }
 </script>
 
 <template>
   <div class="jumbo-main">
-     
   </div>
+
+  
   <div class="content">
-   <h1>--> Content goes here <--</h1>
-  </div>
+    <h1>--> Content goes here <--</h1>
+    </div>
+  <AppComics/>
 </template>
 
 <style lang="scss" scoped>
