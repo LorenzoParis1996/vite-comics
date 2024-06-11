@@ -1,11 +1,11 @@
 <script>
-import AppCard from './AppCard.vue';
+import AppCards from './AppCards.vue';
 export default {
   data() {
     return {}
     },
     components: {
-      AppCard
+      AppCards
     }
 }
 </script>
@@ -16,7 +16,7 @@ export default {
 
   
   
-  <AppCard/>
+  <AppCards/>
 </template>
 
 <style lang="scss" scoped>

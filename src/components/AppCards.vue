@@ -1,4 +1,6 @@
 <script>
+import SingleCard from './SingleCard.vue';
+
 export default {
     data() {
         return {
@@ -77,6 +79,9 @@ export default {
     },
 ]
         }
+    },
+    components: {
+      SingleCard
     }
 }
 
@@ -84,14 +89,12 @@ export default {
 
 <template>
   <div class="content">
-    <div class="cards">
-      <article v-for="(item, index) in cardList" :key="index">
-        <img :src="item.thumb" :alt="item.series">
-        <p>{{ item.series }}</p>
+    <div class="container-cards">
+      <SingleCard v-for="(item, index) in cardList" :key="index" :singleCard="item"/>
 
-      </article>
+     
     </div>
-    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -101,36 +104,12 @@ export default {
     background-color: #1c1c1c;
     padding: 3rem; 
 
-    .cards {
+    .container-cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       max-width: 1200px;
       margin: 0 auto;
-
-      article {
-        width: calc(100%/ 6);
-        padding: 0.8rem;
-
-        img {
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-          object-position: top;
-
-          &:hover {
-            filter: brightness(1.50);
-          }
-          
-        }
-
-        p {
-          padding-top: 0.5rem;
-          color: white;
-          text-transform: uppercase;
-          font-size: 12px;
-        }
-      }
     }  
  }
 
